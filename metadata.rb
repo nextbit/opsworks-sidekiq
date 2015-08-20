@@ -1,5 +1,5 @@
 name 'opsworks-sidekiq'
-maintainer 'BargeApp LLC'
-maintainer_email 'noah@bargeapp.com'
+maintainer 'Nextbit Tecnologia'
+maintainer_email 'dev@nextbit.com.br'
 license 'MIT'
 version '0.0.1'
