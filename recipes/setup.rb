@@ -22,7 +22,7 @@ node[:deploy].each do |application, deploy|
   rack_env = deploy[:rails_env] || settings[:rack_env] || settings[:rails_env]
   instances = settings[:instances] || 1
 
-  instances.times do |idx|
+  instances.to_i.times do |idx|
     idx = idx + 1
     template "/etc/init/sidekiq-#{application}-#{idx}.conf" do
       source "sidekiq-n.conf.erb"
