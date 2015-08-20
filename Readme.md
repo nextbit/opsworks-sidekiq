@@ -1,6 +1,7 @@
 # Sidekiq Opsworks Cookbook using upstart
 
 Inspiration from https://github.com/drakerlabs/opsworks_sidekiq
+<p/>
 Inspiration from https://github.com/bargeapp/opsworks-sidekiq
 
 
