@@ -1,5 +1,3 @@
-include_recipe 'deploy'
-
 node[:deploy].each do |application, deploy|
 
   Chef::Log.info("Configuring sidekiq for application #{application}")
@@ -14,6 +12,8 @@ node[:deploy].each do |application, deploy|
 
   # first get layer-specific settings
   settings = node[:sidekiq][layer]
+
+  puts settings
 
   # fall back on application-specific settings
   settings = node[:sidekiq][application] if settings.nil?
